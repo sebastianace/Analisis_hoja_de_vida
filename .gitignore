@@ -8,3 +8,6 @@ __pycache__/
 .idea/
 .vscode/
 datos/historial.json.*.tmp
+
+# Historial local: puede contener fragmentos de CV reales
+datos/historial.json
