@@ -1,0 +1,18 @@
+Desarrollador backend Python junior — Bucaramanga (híbrido)
+
+Responsabilidades:
+- Desarrollar y mantener APIs REST con Python y Django.
+- Escribir consultas y migraciones sobre PostgreSQL.
+- Participar en revisiones de código y escribir pruebas automatizadas.
+- Documentar los servicios que construya.
+
+Requisitos:
+- Al menos 1 año de experiencia en desarrollo backend con Python.
+- Conocimiento de Django o FastAPI y de APIs REST.
+- Manejo de PostgreSQL o de otra base de datos relacional.
+- Control de versiones con Git.
+- Formación técnica o tecnológica en desarrollo de software.
+
+Deseable:
+- Experiencia con Docker.
+- Inglés de lectura técnica.

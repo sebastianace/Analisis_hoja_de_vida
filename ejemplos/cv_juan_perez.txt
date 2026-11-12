@@ -1,0 +1,25 @@
+JUAN PÉREZ MORA
+Estudiante de desarrollo de software — Bucaramanga, Colombia
+juan.perez@ejemplo.com
+
+PERFIL
+Estudiante de programación interesado en el desarrollo web. Busco mi primera
+experiencia profesional como desarrollador.
+
+EXPERIENCIA
+Proyectos académicos (2025 - 2026)
+- Construí una tienda en línea con HTML, CSS y JavaScript como proyecto final.
+- Participé en una hackatón de 48 horas desarrollando un prototipo en Python.
+
+Auxiliar administrativo — Distribuidora El Progreso (2023 - 2024)
+- Registré inventario y atendí proveedores.
+
+FORMACIÓN
+Técnico en sistemas — SENA (2024)
+Bootcamp de programación en curso (2026)
+
+HABILIDADES TÉCNICAS
+HTML, CSS, JavaScript, Python básico, Git
+
+IDIOMAS
+Español nativo.

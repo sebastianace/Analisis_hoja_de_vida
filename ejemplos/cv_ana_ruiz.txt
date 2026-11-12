@@ -1,0 +1,26 @@
+ANA RUIZ CASTILLO
+Ingeniera de software — Medellín, Colombia
+ana.ruiz@ejemplo.com
+
+PERFIL
+Ingeniera de software con 6 años de experiencia en servicios backend de alta carga.
+
+EXPERIENCIA
+Ingeniera backend senior — Pagos Digitales S.A. (2022 - 2026)
+- Lideré la migración de un monolito Django a cuatro servicios con FastAPI.
+- Diseñé el esquema PostgreSQL que soporta 2 millones de transacciones mensuales.
+- Implementé pruebas de contrato y reduje los incidentes en producción un 60%.
+- Mantuve imágenes Docker y despliegues con GitHub Actions.
+
+Desarrolladora backend — Consultora Nexus (2020 - 2022)
+- Desarrollé APIs REST para clientes del sector salud.
+
+FORMACIÓN
+Ingeniera de Sistemas — Universidad Nacional de Colombia (2020)
+Especialización en Arquitectura de Software (2023)
+
+HABILIDADES TÉCNICAS
+Python, Django, FastAPI, PostgreSQL, Redis, Docker, Kubernetes, pytest, Git
+
+IDIOMAS
+Español nativo. Inglés C1.

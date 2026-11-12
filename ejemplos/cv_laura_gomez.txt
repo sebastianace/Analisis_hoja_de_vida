@@ -1,0 +1,28 @@
+LAURA GÓMEZ RINCÓN
+Desarrolladora backend — Bucaramanga, Colombia
+laura.gomez@ejemplo.com · github.com/ejemplo-laura
+
+PERFIL
+Desarrolladora backend con 3 años de experiencia construyendo servicios en Python.
+Enfocada en APIs REST, pruebas automatizadas y bases de datos relacionales.
+
+EXPERIENCIA
+Desarrolladora backend — Logística Andina S.A.S. (2023 - 2026)
+- Desarrollé y mantuve 12 endpoints REST con Django REST Framework.
+- Reduje el tiempo de respuesta del catálogo de 1200 ms a 380 ms optimizando consultas.
+- Migré la base de datos de MySQL a PostgreSQL sin interrupciones del servicio.
+- Elevé la cobertura de pruebas del 35% al 78% con pytest.
+
+Practicante de desarrollo — Fundación Tecnológica del Oriente (2022 - 2023)
+- Construí un panel interno en Django para registrar donaciones.
+- Automaticé con Git y GitHub Actions el despliegue de la aplicación.
+
+FORMACIÓN
+Tecnóloga en Análisis y Desarrollo de Software — SENA (2022)
+Certificación "Backend Development with Django" — plataforma en línea (2024)
+
+HABILIDADES TÉCNICAS
+Python, Django, Django REST Framework, FastAPI, PostgreSQL, SQL, pytest, Git, Docker
+
+IDIOMAS
+Español nativo. Inglés B2 certificado.
