@@ -34,7 +34,20 @@ pip install -r requirements.txt
 cp .env.example .env               # Windows: copy .env.example .env
 ```
 
-Edita `.env` con una de las dos opciones. El archivo nunca se sube al repositorio.
+Edita `.env` con una de las opciones. El archivo nunca se sube al repositorio.
+Aunque las variables empiecen por `OPENAI_`, sirven para cualquier proveedor con
+API compatible con OpenAI: la clave de Gemini va en `OPENAI_API_KEY`.
+
+**Con Gemini (probado, tiene capa gratuita):**
+
+```dotenv
+OPENAI_API_KEY=tu_clave_de_gemini
+OPENAI_MODEL=gemini-2.5-flash
+OPENAI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
+OPENAI_STRUCTURED_METHOD=json_schema
+```
+
+La clave se crea en <https://aistudio.google.com/apikey>.
 
 **Con OpenAI:**
 
@@ -44,17 +57,25 @@ OPENAI_MODEL=gpt-4o-mini
 OPENAI_STRUCTURED_METHOD=json_schema
 ```
 
-**Con Ollama en local, sin costo:**
+**Con Ollama en local, sin costo (no recomendado con modelos pequeños):**
 
 ```dotenv
 OPENAI_API_KEY=ollama
 OPENAI_MODEL=llama3.1
 OPENAI_BASE_URL=http://localhost:11434/v1
-OPENAI_STRUCTURED_METHOD=function_calling
+OPENAI_STRUCTURED_METHOD=json_schema
 ```
 
-Requiere `ollama serve` activo y `ollama pull llama3.1`. Cada registro guarda el
-modelo que se usó, para saber de dónde salió cada puntaje.
+Requiere `ollama serve` activo y `ollama pull llama3.1`. Se probó `llama3.1` (8B)
+y no cumple las reglas del contrato: con `function_calling` escribe la llamada
+como texto y la app recibe una respuesta vacía; con `json_schema` devuelve la
+estructura pero incumple las reglas de citas, y la verificación rechaza el
+resultado. Con un modelo local más grande podría funcionar, pero no se ha probado.
+Los detalles están en [PRUEBAS.md](PRUEBAS.md).
+
+Cada registro guarda el modelo que se usó, para saber de dónde salió cada puntaje.
+
+> Después de editar `.env`, reinicia la app: la configuración se lee al arrancar.
 
 ## Ejecución
 
@@ -136,3 +157,10 @@ puntaje en Python con los pesos → `guardar_evaluacion` → mostrar el resultad
   pesos. La app lo advierte en la pestaña de comparación.
 - La calidad de la clasificación depende del modelo. Las pruebas automatizadas
   verifican el comportamiento de la aplicación, no el criterio del modelo.
+- Las citas deben tener al menos 8 caracteres. Con `gemini-2.5-flash` algunas
+  evaluaciones se rechazan porque el modelo divide una lista de habilidades en
+  citas sueltas como «Git». El rechazo es el comportamiento previsto (no se guarda
+  un puntaje dudoso), pero obliga a reintentar. Mejora posible: reintento
+  automático, o aceptar citas cortas con coincidencia de palabra completa.
+- `datos/historial.json` se crea al evaluar y no se versiona: puede contener
+  fragmentos de CV reales.
